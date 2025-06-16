@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InnovaTech | Professional Portfolio</title>
+    <link rel="icon" href="images/logo (2).jpg" type="image/jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header container">
+        <a href="index.html" class="logo">
+            <img src="images/logo (2).jpg" alt="InnovaTech Logo" />
+            <span>InnovaTech</span>
+        </a>
+    </header>
+
+
+    <main class="container">
+        <section class="hero" data-aos="fade-up">
+            <div class="hero-content">
+                <h1>Hello, Welcome to <span class="highlight">InnovaTech</span></h1>
+                <p class="subtitle">Where we bring your imaginations out of obscurity</p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+            <img src="images/logo (2).jpg" alt="InnovaTech Logo" class="hero-img" />
+        </section>
+
+        <section id="about" class="section" data-aos="fade-up">
+            <h2>About Us</h2>
+            <p>
+                At InnovaTech, we specialize in developing innovative and scalable web solutions tailored to your needs.
+                Our team uses the latest technologies to create seamless user experiences and powerful applications.
+            </p>
+        </section>
+
+        <section id="tech-stack" class="section" data-aos="fade-up">
+            <h2>Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item" title="HTML5">
+                    <img src="images/html.png" alt="HTML5" />
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item" title="CSS3">
+                    <img src="images/css.png" alt="CSS3" />
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item" title="JavaScript">
+                    <img src="images/javascript.png" alt="JavaScript" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item" title="React">
+                    <img src="images/react2.png" alt="React" />
+                    <span>React</span>
+                </div>
+                <div class="tech-item" title="Next.js">
+                    <img src="images/next.png" alt="Next.js" />
+                    <span>Next.js</span>
+                </div>
+                <div class="tech-item" title="PostgreSQL">
+                    <img src="images/postgres.png" alt="PostgreSQL" />
+                    <span>PostgreSQL</span>
+                </div>
+                <div class="tech-item" title="Node.js">
+                    <img src="images/node.png" alt="Node.js" />
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item" title="MongoDB">
+                    <img src="images/mongo.jpg" alt="MongoDB" />
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-item" title="Python">
+                    <img src="images/python.png" alt="Python" />
+                    <span>Python</span>
+                </div>
+                <div class="tech-item" title="Figma">
+                    <img src="images/figma.png" alt="Figma" />
+                    <span>Figma</span>
+                </div>
+                <div class="tech-item" title="Git">
+                    <img src="images/git.png" alt="Git" />
+                    <span>Git</span>
+                </div>
+                <div class="tech-item" title="GitHub">
+                    <img src="images/github2.png" alt="GitHub" />
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="images/hero1.webp" alt="Online Learning Platform" />
+                    <h3>Online Learning Platform</h3>
+                    <p>A complete web learning app for students built with the MERN stack.</p>
+                    <a href="https://edulearn-6ime.onrender.com" target="_blank" rel="noopener" class="btn">View
+                        Project</a>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/ecom.png" alt="E-Commerce Site" />
+                    <h3>E-Commerce Site</h3>
+                    <p>Responsive online store with cart, authentication, and admin dashboard.</p>
+                    <a href="https://igberry.github.io/myportfolio/e-commerce/index.html" target="_blank" rel="noopener"
+                        class="btn">View Project</a>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/ecoms.png" alt="E-Commerce Site" />
+                    <h3>E-Commerce Site</h3>
+                    <p>Responsive online store with cart, authentication, and admin dashboard.</p>
+                    <a href="https://igberry.github.io/myportfolio/pro-commerce/index.html" target="_blank"
+                        rel="noopener" class="btn">View Project</a>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/food.jpeg" alt="Interactive Recipe Recommender" />
+                    <h3>Interactive Recipe Recommender</h3>
+                    <p>A smart app suggesting recipes based on ingredients you have.</p>
+                    <a href="https://igberry.github.io/cse121b/project/index.html" target="_blank" rel="noopener"
+                        class="btn">View Project</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <form id="contactForm" novalidate>
+                <input type="text" name="name" id="name" placeholder="Your Name" required minlength="2" />
+                <input type="email" name="email" id="email" placeholder="Your Email" required />
+                <textarea name="message" id="message" placeholder="Your Message" required minlength="10"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="formResponse" role="alert" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p>© 2025 InnovaTech. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/#####" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/LinkedIn2.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/InnovaTech" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="images/github3.png" alt="GitHub" />
+            </a>
+            <a href="https://web.facebook.com/innovatech.devpro/" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/fbicon.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/innovatech_dev" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/insta.png" alt="Instagram" />
+            </a>
+            <a href="https://x.com/DVIg_berry" target="_blank" rel="noopener" aria-label="X">
+                <img src="images/X.png" alt="X" />
+            </a>
+            <a href="https://wa.me/c/2349121681159" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <img src="images/whatsappicon.jpg" alt="WhatsApp" />
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
