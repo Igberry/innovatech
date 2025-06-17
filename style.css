@@ -355,21 +355,61 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .hero {
+    body {
+        padding: 0 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .header {
         flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .theme-toggle-btn {
+        font-size: 1.4rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .project-card img {
+        height: 160px;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .section p {
+        font-size: 0.95rem;
+    }
+
+    #contactForm button {
+        width: 100%;
         text-align: center;
     }
 
-    .hero-img {
-        max-width: 80%;
-        margin: 20px auto 0;
-    }
-
-    .projects-grid {
+    .testimonials-grid {
         grid-template-columns: 1fr;
     }
 
-    .tech-grid {
-        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    .footer {
+        font-size: 0.9rem;
     }
 }
