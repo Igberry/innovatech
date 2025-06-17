@@ -45,6 +45,7 @@ body {
     font-weight: 700;
     font-size: 1.8rem;
     gap: 12px;
+    margin-left: 15px;
 }
 
 .logo img {
