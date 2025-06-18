@@ -1,30 +1,3 @@
-// Theme toggle logic
-const themeToggleBtn = document.getElementById('theme-toggle');
-const body = document.body;
-
-// Load theme preference on page load
-document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('innovaTheme');
-    if (savedTheme === 'dark') {
-        body.classList.add('dark-theme');
-        themeToggleBtn.textContent = '☀️';
-    } else {
-        body.classList.remove('dark-theme');
-        themeToggleBtn.textContent = '🌙';
-    }
-});
-
-themeToggleBtn.addEventListener('click', () => {
-    body.classList.toggle('dark-theme');
-    if (body.classList.contains('dark-theme')) {
-        themeToggleBtn.textContent = '☀️';
-        localStorage.setItem('innovaTheme', 'dark');
-    } else {
-        themeToggleBtn.textContent = '🌙';
-        localStorage.setItem('innovaTheme', 'light');
-    }
-});
-
 // Contact Form Validation and Submission
 const contactForm = document.getElementById('contactForm');
 const formResponse = document.getElementById('formResponse');
@@ -64,8 +37,4 @@ contactForm.addEventListener('submit', (e) => {
     formResponse.textContent = 'Thank you for reaching out! We will get back to you soon.';
     formResponse.style.color = '#4f46e5';
     contactForm.reset();
-});
-
-document.getElementById('hamburger').addEventListener('click', () => {
-    document.getElementById('nav-menu').classList.toggle('active');
 });

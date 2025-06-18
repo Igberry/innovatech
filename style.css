@@ -106,6 +106,21 @@ body {
     object-fit: contain;
 }
 
+.about-img {
+    margin-top: 50px;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgb(79 70 229 / 0.15);
+    object-fit: contain;
+    margin-left: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgb(79 70 229 / 0.2);
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
