@@ -25,12 +25,10 @@ router.post('/', async (req, res) => {
         await newMessage.save();
 
         await transporter.sendMail({
-            from: `"${name}" <${email}>`,
             to: process.env.SMTP_USER,
-            subject: 'New Contact Form Message',
-            html: `<p><strong>Name:</strong> ${name}</p>
-             <p><strong>Email:</strong> ${email}</p>
-             <p><strong>Message:</strong><br>${message}</p>`
+            subject: `New Message from ${name}`,
+            text: `You received a new message from your portfolio site:\n\nName: ${name}\nEmail: ${email}\nMessage:\n${message}`,
+            replyTo: email
         });
 
         res.json({ message: 'Message sent successfully!' });
