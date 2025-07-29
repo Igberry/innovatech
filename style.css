@@ -105,7 +105,9 @@ body {
     box-shadow: 0 8px 20px rgb(79 70 229 / 0.15);
     object-fit: contain;
 }
-
+.section video {
+    border-radius: 10px;
+}
 .about-img {
     margin-top: 50px;
     max-width: 200px;
