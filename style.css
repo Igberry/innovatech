@@ -105,9 +105,11 @@ body {
     box-shadow: 0 8px 20px rgb(79 70 229 / 0.15);
     object-fit: contain;
 }
+
 .section video {
     border-radius: 10px;
 }
+
 .about-img {
     margin-top: 50px;
     max-width: 200px;
@@ -169,7 +171,13 @@ body {
     margin-top: 20px;
 }
 
-.tech-item {
+.tech-item,
+.tech-item1,
+.tech-item2,
+.tech-item3,
+.tech-item4,
+.tech-item5,
+.tech-item6 {
     background: white;
     border-radius: 10px;
     box-shadow: 0 3px 12px rgb(0 0 0 / 0.07);
@@ -179,7 +187,13 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.tech-item:hover {
+.tech-item:hover,
+.tech-item1:hover,
+.tech-item2:hover,
+.tech-item3:hover,
+.tech-item4:hover,
+.tech-item5:hover,
+.tech-item6:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgb(79 70 229 / 0.2);
 }
@@ -191,6 +205,53 @@ body {
     object-fit: contain;
 }
 
+.tech-item1 img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 50px;
+    object-fit: contain;
+}
+
+.tech-item2 img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.tech-item3 img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.tech-item4 img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 40px;
+    object-fit: contain;
+}
+
+.tech-item5 img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 40px;
+    object-fit: contain;
+}
+
+.tech-item6 img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 30px;
+    object-fit: contain;
+}
 .tech-item span {
     font-weight: 500;
     font-size: 0.9rem;
