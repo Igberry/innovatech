@@ -14,14 +14,17 @@ const transporter = nodemailer.createTransport({
 });
 
 router.post('/', async (req, res) => {
-    const { name, email, phone, service, message } = req.body;
+    const { name, email, country_code, phone, service, message } = req.body;
 
-    if (!name || !email || !message || name.length < 2 || message.length < 10) {
+    if (!name || !email || !phone || !country_code || !message || name.length < 2 || message.length < 10) {
         return res.status(400).json({ error: 'Invalid booking form data' });
     }
 
+    // Combine country code and phone
+    const fullPhone = `${country_code}${phone}`;
+
     try {
-        const newBooking = new Booking({ name, email, phone, service, message });
+        const newBooking = new Booking({ name, email, phone: fullPhone, service, message });
         await newBooking.save();
 
         await transporter.sendMail({
@@ -32,13 +35,11 @@ You received a new booking from your website:
 
 Name: ${name}
 Email: ${email}
-Phone: ${phone}
+Phone: ${fullPhone}
 Service: ${service}
 Message: ${message}
             `,
             replyTo: email
-
-            
         });
 
         res.json({ message: 'Booking submitted successfully!' });
