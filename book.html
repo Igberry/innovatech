@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovatech</title>
+    <link rel="stylesheet" href="innovatech.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <img src="images/innovatechlogo.png" alt="InnovaTech Logo" />
+            <span>InnovaTech</span>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-section">
+            <h2>Book a Free Consultation</h2>
+            <p>Fill in your details below and we’ll reach out to confirm your session.</p>
+            <form id="bookingForm">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <!-- ✅ Phone number with country code -->
+                <div style="display: flex; gap: 5px;">
+                    <select name="country_code" required style="width: 30%;">
+                        <option value="+234" selected>🇳🇬 +234 (NG)</option>
+                        <option value="+1">🇺🇸 +1 (US)</option>
+                        <option value="+44">🇬🇧 +44 (UK)</option>
+                        <option value="+91">🇮🇳 +91 (IN)</option>
+                        <option value="+27">🇿🇦 +27 (ZA)</option>
+                        <option value="+61">🇦🇺 +61 (AU)</option>
+                        <option value="+81">🇯🇵 +81 (JP)</option>
+                        <option value="+49">🇩🇪 +49 (DE)</option>
+                        <option value="+33">🇫🇷 +33 (FR)</option>
+                        <option value="+39">🇮🇹 +39 (IT)</option>
+                        <option value="+86">🇨🇳 +86 (CN)</option>
+                        <option value="+7">🇷🇺 +7 (RU)</option>
+                        <option value="+351">🇵🇹 +351 (PT)</option>
+                        <option value="+34">🇪🇸 +34 (ES)</option>
+                        <option value="+46">🇸🇪 +46 (SE)</option>
+                        <option value="+31">🇳🇱 +31 (NL)</option>
+                        <option value="+41">🇨🇭 +41 (CH)</option>
+                        <option value="+55">🇧🇷 +55 (BR)</option>
+                        <option value="+52">🇲🇽 +52 (MX)</option>
+                        <option value="+82">🇰🇷 +82 (KR)</option>
+                        <option value="+62">🇮🇩 +62 (ID)</option>
+                        <option value="+63">🇵🇭 +63 (PH)</option>
+                        <option value="+20">🇪🇬 +20 (EG)</option>
+                        <option value="+212">🇲🇦 +212 (MA)</option>
+                        <option value="+254">🇰🇪 +254 (KE)</option>
+                        <option value="+256">🇺🇬 +256 (UG)</option>
+                        <option value="+255">🇹🇿 +255 (TZ)</option>
+                        <option value="+66">🇹🇭 +66 (TH)</option>
+                        <option value="+90">🇹🇷 +90 (TR)</option>
+                        <option value="+358">🇫🇮 +358 (FI)</option>
+                        <option value="+973">🇧🇭 +973 (BH)</option>
+                        <option value="+974">🇶🇦 +974 (QA)</option>
+                        <option value="+965">🇰🇼 +965 (KW)</option>
+                        <option value="+961">🇱🇧 +961 (LB)</option>
+                    </select>
+
+                    <input type="tel" name="phone" placeholder="Phone Number" required style="flex: 1;">
+                </div>
+
+                <select name="service" required>
+                    <option disabled selected>Select a service</option>
+                    <option>Website Development</option>
+                    <option>Mobile App</option>
+                    <option>Graphic Design</option>
+                    <option>Video Editing</option>
+                    <option>Others</option>
+                </select>
+
+                <input type="date" name="preferred_date" required>
+
+                <textarea name="message" placeholder="Tell us more about your project..." rows="4"></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+
+                <!-- ✅ Message display area -->
+                <div id="form-message" style="margin-top: 10px;"></div>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Innovatech World | All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/#####" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="images/LinkedIn2.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/InnovaTech" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="images/github3.png" alt="GitHub" />
+            </a>
+            <a href="https://web.facebook.com/innovatech.devpro/" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/fbicon.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/innovatech_dev" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/insta.png" alt="Instagram" />
+            </a>
+            <a href="https://x.com/DVIg_berry" target="_blank" rel="noopener" aria-label="X">
+                <img src="images/X.png" alt="X" />
+            </a>
+            <a href="https://wa.me/c/2349121681159" target="_blank" rel="noopener" aria-label="WhatsApp">
+                <img src="images/whatsappicon.jpg" alt="WhatsApp" />
+            </a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
