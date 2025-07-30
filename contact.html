@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Innovatech</title>
+    <title>Innovative Wireframe Page</title>
     <link rel="stylesheet" href="innovatech.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
@@ -26,60 +26,16 @@
         </nav>
     </header>
 
-    <main class="main-grid">
-        <section class="hero">
-            <div class="hero-text">
-                <h2>Build, Create & Innovate</h2>
-                <p>Explore a new world of digital solutions tailored for your success.</p>
-                <a href="#" class="btn-primary">Get Started</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/innovatech.png" alt="Innovation" />
-            </div>
-        </section>
-
-        <section class="cards-section">
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Custom websites built for speed, performance and user experience.</p>
-            </div>
-            <div class="card">
-                <h3>UI/UX Design</h3>
-                <p>Designs that speak your brand’s language and engage users effortlessly.</p>
-            </div>
-            <div class="card">
-                <h3>App Launch</h3>
-                <p>Deploy mobile apps on Playstore and App Store with strategic support.</p>
-            </div>
-            <div class="card">
-                <h3>Logo Design</h3>
-                <p>Creative logos that capture your brand identity and leave lasting impressions.</p>
-            </div>
-
-            <div class="card">
-                <h3>Video Ads Creation</h3>
-                <p>Engaging promotional videos crafted to boost your marketing campaigns effectively.</p>
-            </div>
-
-            <div class="card">
-                <h3>Video Editing</h3>
-                <p>Professional editing to transform raw footage into polished, captivating stories.</p>
-            </div>
-
-            <div class="card">
-                <h3>Graphic Design</h3>
-                <p>Visually stunning designs for brochures, flyers, banners, and digital content.</p>
-            </div>
-            <div class="card">
-                <h3>Tech Consulting</h3>
-                <p>Expert guidance to help you choose and implement the best technology solutions.</p>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <h2>Let’s bring your ideas to life</h2>
-            <p>Schedule a free consultation today.</p>
-            <a href="#" class="btn-secondary">Book Now</a>
+    <main>
+        <section id="contact" class="section" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <form id="contactForm" novalidate>
+                <input type="text" name="name" id="name" placeholder="Your Name" required minlength="2" />
+                <input type="email" name="email" id="email" placeholder="Your Email" required />
+                <textarea name="message" id="message" placeholder="Your Message" required minlength="10"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="formResponse" role="alert" aria-live="polite"></p>
+            </form>
         </section>
     </main>
 
