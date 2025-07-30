@@ -547,4 +547,130 @@ textarea:focus {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .cards-section,
+    .services-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+
+    .cta-section {
+        padding: 3rem 1rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .main-container {
+        padding: 0 1rem;
+    }
+
+    .services-section {
+        padding: 40px 20px;
+    }
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-container h2 {
+        font-size: 2rem;
+    }
+
+    .about-container p,
+    .timeline-item {
+        font-size: 0.95rem;
+    }
+
+    .founder-message h3 {
+        font-size: 1.6rem;
+    }
+
+    .founder-message p {
+        font-size: 1rem;
+    }
+
+    .section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+
+    .site-footer {
+        font-size: 0.85rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .social-icons a img {
+        width: 24px;
+        height: 24px;
+    }
+
 }
