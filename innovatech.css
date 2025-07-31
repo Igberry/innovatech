@@ -140,9 +140,38 @@ nav a:hover::after {
     margin-bottom: 1.5rem;
 }
 
+.hero-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 .hero-image img {
     max-width: 100%;
-    border-radius: 10px;
+}
+
+.inno1 {
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.inno2 {
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.inno3 {
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.inno4 {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
 }
 
 .btn-primary {
