@@ -632,6 +632,9 @@ textarea:focus {
     background-color: #0056cc;
 }
 
+.service {
+    
+}
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
